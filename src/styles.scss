@@ -1,0 +1,21 @@
+:root {
+  --text-color: #222;
+  --bg-color: #777;
+  --bg-hover-color: #000;
+  --bg-card-color: rgb(255, 72, 0);
+  --text-card-color: rgb(255, 196, 0);
+  --body-color: rgb(198, 251, 255);
+}
+
+.dark:root {
+  --text-color: #777;
+  --bg-color: #222;
+  --bg-hover-color: rgb(207, 207, 207);
+  --bg-card-color: rgb(138, 0, 180);
+  --text-card-color: rgb(14, 214, 197);
+  --body-color: rgb(53, 53, 53);
+}
+
+html, body {
+  background-color: var(--body-color);
+}

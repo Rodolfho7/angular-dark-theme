@@ -1,0 +1,10 @@
+<div>
+  <input type="checkbox" name="toggle-theme" id="toggle-theme" [(ngModel)]="themeDark" (change)="toggleMode()">
+  <label for="toggle-theme">Dark theme?</label>
+</div>
+
+<button class="add-name-btn" (click)="addNome()">Adicionar Nome</button>
+
+<ul>
+  <li class="list-item" *ngFor="let name of names">{{ name }}</li>
+</ul>

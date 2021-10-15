@@ -1,0 +1,27 @@
+.add-name-btn {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-weight: 900;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--bg-hover-color);
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.list-item {
+  background-color: var(--bg-card-color);
+  color: var(--text-card-color);
+  padding: 20px;
+  margin-bottom: 1rem;
+}
