@@ -1,14 +1,16 @@
 :root {
-  --text-color: #222;
+  --text-color: #000;
+  --text-hover-color: #FFF;
   --bg-color: #777;
   --bg-hover-color: #000;
   --bg-card-color: rgb(255, 72, 0);
-  --text-card-color: rgb(255, 196, 0);
+  --text-card-color: rgb(255, 255, 255);
   --body-color: rgb(198, 251, 255);
 }
 
 .dark:root {
-  --text-color: #777;
+  --text-color: #DDD;
+  --text-hover-color: #000;
   --bg-color: #222;
   --bg-hover-color: rgb(207, 207, 207);
   --bg-card-color: rgb(138, 0, 180);
@@ -16,6 +18,18 @@
   --body-color: rgb(53, 53, 53);
 }
 
+html {
+  height: 100%;
+}
+
 html, body {
   background-color: var(--body-color);
+}
+
+.color-theme-in-transition,
+.color-theme-in-transition *,
+.color-theme-in-transition *::before,
+.color-theme-in-transition *::after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }

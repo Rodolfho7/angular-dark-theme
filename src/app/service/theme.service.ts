@@ -14,6 +14,10 @@ export class ThemeService {
 
   toggleTheme(themeDarkChecked: boolean): void {
     this.storageService.setItem('my-theme', themeDarkChecked ? 'dark' : 'light');
+    this.htmlReference.classList.add('color-theme-in-transition');
     this.htmlReference.classList.toggle('dark');
+    setTimeout(() => {
+      this.htmlReference.classList.remove('color-theme-in-transition');
+    }, 1000);
   }
 }

@@ -9,7 +9,7 @@ import { ThemeService } from './service/theme.service';
 })
 export class AppComponent implements OnInit {
   themeDark: boolean = false;
-  names: string[] = ['nome0', 'nome1', 'nome2'];
+  names: string[] = ['name-0', 'name-1', 'name-2'];
 
   constructor(
     private readonly themeService: ThemeService,
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   }
 
   addNome(): void {
-    this.names.push(`nome${this.names.length}`);
+    this.names.push(`name-${this.names.length}`);
   }
 
   toggleMode(): void {
